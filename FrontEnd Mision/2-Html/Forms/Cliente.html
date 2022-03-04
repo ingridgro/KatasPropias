@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Control de Tickets</title>
+    <title>Sweet Bake</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c07647651c.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -23,12 +23,19 @@
             background-image: url(../Content/bg-cover.jpg);
             background-size: cover;
         }
+
+        .fondo-rosa {
+            background-color: #fde3f1 !important;
+        }
+        .lead {
+            font-size: 1rem;
+        }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top " style="background-color: #fde3f1;">
-        <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top fondo-rosa">
+        <a class="navbar-brand" href="Pastelero.html">
             <img src="../Icon_Pasteleria.png" height="50" alt="logo">
             Sweet Bake
         </a>
@@ -53,9 +60,9 @@
 
 
     <div class="cover">
-        <label style="float: right">
+        <h1 class="float-right font-italic mr-4 text-light display-1">
             Haz tu día dulce.
-        </label>
+        </h1>
     </div>
 
     <section class="container-fluid mt-5" id="Productos">
@@ -107,8 +114,7 @@
                 </div>
             </div>
         </div>
-
-        <hr class="my-4">
+        <hr class="my-4 w-75">
         <div class="row">
             <div class="col-sm-12">
                 <h2>
@@ -151,7 +157,8 @@
             </div>
         </div>
     </section>
-    <section class="container-fluid mt-5" id="Pedidos">
+    <hr class="my-5">
+    <section class="container-fluid mb-5" id="Pedidos">
         <div class="row">
             <div class="col-sm-12 text-center">
                 <h1>
@@ -219,5 +226,27 @@
         </div>
 
     </section>
+
+    <div class="jumbotron jumbotron-fluid p-4">
+        <div class="container">
+
+            <!--<h1 class="display-4">Fluid jumbotron</h1>
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>-->
+
+            <div class="row">
+                <div class="col-sm-4"><img src="../Logo_Pasteleria.png" alt="logo"></div>
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <label>Dirección:</label>
+                    <p class="lead">Monterrey 64000, Nuevo León, México</p><br />
+                    <label>Teléfono:</label>
+                    <p class="lead">81 8080 1234</p><br />
+                    <label>Horarios de atención:</label>
+                    <p class="lead">Lun - Dom (12:00pm - 08:00pm)</p><br />
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
